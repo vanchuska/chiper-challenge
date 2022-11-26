@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import config from './config';
 import { environments } from './environments';
+import { TrucksModule } from './trucks/trucks.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { environments } from './environments';
       isGlobal: true,
       cache: true,
     }),
+    TrucksModule,
   ],
   controllers: [AppController],
   providers: [AppService],

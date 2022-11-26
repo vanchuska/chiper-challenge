@@ -34,7 +34,7 @@ export class TrucksService {
         const {data} = await firstValueFrom(
             this.httpService.get(this.configService.food_truck_api_url+'?$$app_token='+this.configService.food_truck_app_token)
         );
-        console.log(data);
+        // console.log(data);
         return data;
         }
 }

@@ -2,7 +2,7 @@
   "name": "chiper-coding-challenge",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "@vanhuska",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -70,5 +70,8 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

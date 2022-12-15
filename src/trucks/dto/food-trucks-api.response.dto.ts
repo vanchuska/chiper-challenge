@@ -4,27 +4,27 @@ export interface FoodTruckResponse {
     crs:      CRS;
 }
 
-export interface CRS {
+ interface CRS {
     type:       string;
     properties: CRSProperties;
 }
 
-export interface CRSProperties {
+ interface CRSProperties {
     name: string;
 }
 
-export interface Feature {
+ interface Feature {
     type:       string;
     geometry:   Geometry;
     properties: FeatureProperties;
 }
 
-export interface Geometry {
+ interface Geometry {
     type:        string;
     coordinates: number[];
 }
 
-export interface FeatureProperties {
+ interface FeatureProperties {
     location_state:      string;
     x:                   string;
     location_zip:        string;

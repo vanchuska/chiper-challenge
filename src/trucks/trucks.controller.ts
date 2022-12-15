@@ -10,17 +10,17 @@ export class TrucksController {
   @Get()
   getFoodTrucks() {
     this.logger.warn('getFoodTrucks');
-    return this.trucksService.getTrucks();
+    return this.trucksService.getFoodTrucks();
   }
 
-  @Get('api')
-  getTrucks(@Res() response) {
-    this.logger.warn('getFoodTrucks');
-    return this.trucksService.getFoodTrucks().then(res => {
-      response.status(HttpStatus.CREATED).json(res);
-    }).catch((err)=> {
-      response.status(HttpStatus.NO_CONTENT).json(err);
-    })
+  // @Get('api')
+  // getTrucks(@Res() response) {
+  //   this.logger.warn('getFoodTrucks');
+  //   return this.trucksService.getFoodTrucks().then(res => {
+  //     response.status(HttpStatus.CREATED).json(res);
+  //   }).catch((err)=> {
+  //     response.status(HttpStatus.NO_CONTENT).json(err);
+  //   })
      
-  }
+  // }
 }
